@@ -1,0 +1,466 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    width: 100;
+    float: left;
+}
+
+
+header {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+header img {
+    float: left;
+    width: 100px;
+    height: auto;
+}
+
+.nav {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 105px;
+    line-height: 105px;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: block;
+}
+
+h1,
+h2 {
+    text-decoration: overline green;
+    font-family: 'Merriweather', serif;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+}
+
+h5,
+h6,
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer img {
+    padding-top: 10px;
+    width: 80px;
+    height: auto;
+}
+
+.billeder {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    body {
+        margin: 1px;
+    }
+
+    label {
+        padding-right: 10px;
+        font-size: 30px;
+    }
+
+    nav {
+        position: relative;
+        z-index: 1;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        clear: right;
+        text-decoration: none;
+        color: gray;
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        background-color: white;
+    }
+
+    header img {
+        margin-left: 10px;
+    }
+
+    #willemoes img {
+        width: 100%;
+    }
+
+    .mobilartikel {
+        width: 54%;
+        float: right;
+        margin-left: 1%;
+    }
+
+    #bohemian img {
+        width: 45%
+    }
+
+    #bohemian h2,
+    h6,
+    p {
+        width: 100%;
+        float: right;
+    }
+
+    #bohemian {
+        border: 1px solid green;
+        padding: 1px;
+    }
+
+    .infographic {
+        width: 45% !important;
+        margin: 8px !important;
+        float: left;
+    }
+
+    #dublin {
+        margin-top: 30px;
+        border: 1px solid green;
+        padding: 1px;
+    }
+
+    #dublin img {
+        width: 45%;
+    }
+
+    #olmad {
+        margin-top: 30px;
+        border: 1px solid green;
+        padding: 1px;
+    }
+
+    #olmad img {
+        width: 45%;
+    }
+
+    .container h1,
+    h5 {
+        text-align: center;
+    }
+
+    .artimg {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .artinfo {
+        max-width: 40%;
+        margin-right: 2%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+
+    label {
+        display: none;
+    }
+
+    .menu {
+        margin: 0 30px 0 0;
+    }
+
+    .menu a {
+        margin: 0 10px;
+        line-height: 70px;
+        clear: right;
+        color: gray;
+        text-decoration: none;
+    }
+
+    header img {
+        margin-left: 10px;
+    }
+
+    body {
+        margin: 0 2px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #willemoes img {
+        width: 100%;
+        padding-right: 2%;
+    }
+
+    #bohemian img {
+        width: 100%;
+    }
+
+    #bohemian h2,
+    h6,
+    p {
+        width: 100%;
+
+    }
+
+    #bohemian {
+        border: 1px solid green;
+        padding: 1px;
+    }
+
+    .infographic {
+        width: 60% !important;
+        margin-top: 8px !important;
+    }
+
+    #dublin img {
+        margin-top: 30px;
+        width: 100%;
+        padding-right: 1%;
+    }
+
+    #dublin p {
+        display: none;
+    }
+
+    #olmad p {
+        display: none;
+    }
+
+    #olmad img {
+        margin-top: 30px;
+        width: 100%;
+        padding-left: 1%;
+    }
+
+    .container h1,
+    h5 {
+        text-align: center;
+    }
+
+    .artimg {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .artinfo {
+        max-width: 30%;
+        margin-right: 2%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+
+    label {
+        display: none;
+    }
+
+    .menu {
+        margin: 0 30px 0 0;
+    }
+
+    .menu a {
+        margin: 0 10px;
+        line-height: 70px;
+        clear: right;
+        color: gray;
+        text-decoration: none;
+    }
+
+    body {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #willemoes img {
+        margin-top: 10px;
+        padding-right: 2%;
+        width: 100%;
+    }
+
+    #bohemian img {
+        width: 100%;
+    }
+
+    #bohemian h2,
+    h6,
+    p {
+        width: 100%;
+
+    }
+
+    #bohemian {
+        margin-top: 10px;
+        border: 1px solid green;
+        padding: 1px;
+    }
+
+    .infographic {
+        width: 60% !important;
+        margin-top: 8px !important;
+    }
+
+    #dublin img {
+        margin-top: 30px;
+        width: 100%;
+        padding-right: 1%;
+    }
+
+    #dublin p {
+        display: none;
+    }
+
+    #olmad p {
+        display: none;
+    }
+
+    #olmad img {
+        margin-top: 30px;
+        width: 100%;
+        padding-left: 1%;
+    }
+
+    .container h1,
+    h5 {
+        text-align: center;
+    }
+
+    .container p,
+    h3 {
+        position: relative;
+        left: 15%;
+        max-width: 70%;
+    }
+
+    .artimg {
+        position: relative;
+        left: 15%;
+        max-width: 70%;
+        margin-top: 1%;
+    }
+
+    .artinfo {
+        position: relative;
+        left: 15%;
+        max-width: 25%;
+        margin-right: 2%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}
